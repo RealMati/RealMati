@@ -18,7 +18,7 @@ mati@addis:~$ cat languages.txt
 ### Built
 
 - **[PolyHuntr](https://polyhuntr.com/)** is a prediction-market trading platform on Phoenix LiveView. Markets stream in over WebSockets, Sharpe ratio, drawdown and freshness decide the ranking, and five sizing strategies drive copy-trades. I wrote the market-data layer.
-- **Gazette Plus** is the Ethiopian Press Agency's news app. One Flutter codebase, Android and iOS, 5,000+ downloads.
+- **[Gazette Plus](https://press.et)** is the [Ethiopian Press Agency](https://press.et)'s news app. One Flutter codebase, Android and iOS, 5,000+ downloads.
 - **[EAP](https://github.com/RealMati/EAP)** reads Ethiopian addresses, where Amharic and English mix in the same line, and checks the result against real subcity polygons with a hand-written point-in-polygon test.
 - **Dispatch** is a courier portal for merchants, supervisors and admins, bilingual in English and Amharic, over Go microservices.
 - **PDF2Quiz** turns a PDF into a quiz and ships as a single HTML file that works offline.
