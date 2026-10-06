@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="hero.svg" alt="ማቲ — Mati Milkessa Ensermu. Real-time systems, Elixir, TypeScript, Flutter. Today in Addis Ababa, in the Ethiopian calendar.">
+  <img src="hero.svg" alt="Mati Milkessa Ensermu. Real-time systems, Elixir, TypeScript, Flutter. Today in Addis Ababa, in the Ethiopian calendar.">
 </p>
 
 ```console
@@ -27,7 +27,7 @@ Most of it sits in private and organization repos, so the contribution graph und
 
 ### Background
 
-BSc in Software Engineering at Addis Ababa University, finishing June 2026. Trained through [A2SV](https://www.a2sv.org), the Google-backed fellowship that sends engineers to Google, Bloomberg and Amazon. I use Claude Code daily and read every diff it writes.
+BSc in Software Engineering at Addis Ababa University, finishing June 2026. Trained through [A2SV](https://www.a2sv.org), the Google-backed fellowship that sends engineers to Google, Bloomberg and Amazon.
 
 ### About the banner
 

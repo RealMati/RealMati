@@ -27,7 +27,7 @@ def to_ethiopian(y: int, m: int, d: int) -> tuple[int, int, int]:
     return year, n // 30 + 1, n % 30 + 1
 
 
-SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Mati Milkessa Ensermu. Today in Addis Ababa: {en_date}">
+SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="900" height="170" viewBox="0 0 900 170" role="img" aria-label="Mati Milkessa Ensermu. Today in Addis Ababa: {en_date}">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#0b0f14"/>
@@ -39,20 +39,16 @@ SVG = """<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBo
       <stop offset="1" stop-color="#da121a"/>
     </linearGradient>
   </defs>
-  <rect width="900" height="260" rx="14" fill="url(#bg)"/>
-  <rect x="0" y="244" width="900" height="6" fill="url(#flag)"/>
-  <text x="48" y="150" font-size="110" font-weight="700" fill="#f4f1ea"
-        font-family="'Noto Sans Ethiopic','Abyssinica SIL',Nyala,Kefa,'Menlo',sans-serif">ማቲ</text>
-  <text x="48" y="190" font-size="22" fill="#9fb3c8"
-        font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">Mati Milkessa Ensermu</text>
-  <text x="48" y="218" font-size="14" fill="#5f7388"
-        font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">real-time systems / Elixir / TypeScript / Flutter</text>
+  <rect width="900" height="170" rx="14" fill="url(#bg)"/>
+  <rect x="0" y="164" width="900" height="6" fill="url(#flag)"/>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+    <text x="48" y="84" font-size="34" font-weight="700" fill="#f4f1ea">Mati Milkessa Ensermu</text>
+    <text x="48" y="116" font-size="15" fill="#7d93a8">real-time systems / Elixir / TypeScript / Flutter</text>
+  </g>
   <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">
-    <text x="852" y="92" font-size="13" fill="#5f7388">today in Addis Ababa</text>
-    <text x="852" y="132" font-size="30" fill="#fcdd09"
-          font-family="'Noto Sans Ethiopic','Abyssinica SIL',Nyala,Kefa,sans-serif">{gz_month} {day}</text>
-    <text x="852" y="162" font-size="18" fill="#f4f1ea">{en_date}</text>
-    <text x="852" y="188" font-size="13" fill="#5f7388">{greg}</text>
+    <text x="852" y="70" font-size="12" fill="#5f7388">today in Addis Ababa</text>
+    <text x="852" y="96" font-size="17" fill="#fcdd09">{en_date}</text>
+    <text x="852" y="118" font-size="12" fill="#5f7388">{greg}</text>
   </g>
 </svg>
 """
@@ -63,7 +59,7 @@ def main() -> None:
     ey, em, ed = to_ethiopian(now.year, now.month, now.day)
     gz, en = MONTHS[em - 1]
     out = SVG.format(
-        gz_month=gz, day=ed, en_date=f"{en} {ed}, {ey} EC",
+        en_date=f"{en} {ed}, {ey} EC",
         greg=now.strftime("%d %b %Y").lstrip("0"),
     )
     Path(__file__).resolve().parent.parent.joinpath("hero.svg").write_text(out, encoding="utf-8")
