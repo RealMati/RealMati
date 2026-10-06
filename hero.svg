@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="Mati Milkessa Ensermu. Today in Addis Ababa: Meskerem 26, 2019 EC">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f14"/>
+      <stop offset="1" stop-color="#101923"/>
+    </linearGradient>
+    <linearGradient id="flag" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#078930"/>
+      <stop offset="0.5" stop-color="#fcdd09"/>
+      <stop offset="1" stop-color="#da121a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="260" rx="14" fill="url(#bg)"/>
+  <rect x="0" y="244" width="900" height="6" fill="url(#flag)"/>
+  <text x="48" y="150" font-size="110" font-weight="700" fill="#f4f1ea"
+        font-family="'Noto Sans Ethiopic','Abyssinica SIL',Nyala,Kefa,'Menlo',sans-serif">ማቲ</text>
+  <text x="48" y="190" font-size="22" fill="#9fb3c8"
+        font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">Mati Milkessa Ensermu</text>
+  <text x="48" y="218" font-size="14" fill="#5f7388"
+        font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">real-time systems / Elixir / TypeScript / Flutter</text>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" text-anchor="end">
+    <text x="852" y="92" font-size="13" fill="#5f7388">today in Addis Ababa</text>
+    <text x="852" y="132" font-size="30" fill="#fcdd09"
+          font-family="'Noto Sans Ethiopic','Abyssinica SIL',Nyala,Kefa,sans-serif">መስከረም 26</text>
+    <text x="852" y="162" font-size="18" fill="#f4f1ea">Meskerem 26, 2019 EC</text>
+    <text x="852" y="188" font-size="13" fill="#5f7388">6 Oct 2026</text>
+  </g>
+</svg>
